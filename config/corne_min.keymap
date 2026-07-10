@@ -23,7 +23,7 @@
         &kp ESC &kp Q &kp W &kp F &kp P &kp B &kp J &kp L &kp U &kp Y &kp SEMI &kp DEL
         &kp TAB &kp A &mt LALT R &mt LSHFT S &mt LCTRL T &kp G &kp M &mt LCTRL N &mt LSHFT E &kp I &kp O &kp APOS
         &kp LEFT_GUI &kp Z &kp X &kp C &kp D &kp V &kp K &kp H &kp COMMA &kp DOT &kp SLASH &kp INS
-        &kp LGUI &lt 1 &kp SPACE &kp ENTER &lt 2 &kp BACKSPACE
+        &kp LGUI &mo 1 &kp SPACE &kp ENTER &mo 2 &kp BACKSPACE
         >;
         };
 // -----------------------------------------------------------------------------------------
