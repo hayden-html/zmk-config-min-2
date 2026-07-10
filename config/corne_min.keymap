@@ -19,6 +19,28 @@
             bindings = <&kp>, <&kp>;
             display-name = "Mod-Tap";
         };
+                hml: home_row_mod_left {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            require-prior-idle-ms = <150>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = < ... >; // List of keys on the right side of the keyboard
+            hold-trigger-on-release;
+        };
+        hmr: home_row_mod_right {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            require-prior-idle-ms = <150>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = < ... >; // List of keys on the left side of the keyboard
+            hold-trigger-on-release;
+        };
     };
         keymap {
                 compatible = "zmk,keymap";
@@ -32,7 +54,7 @@
 //                    | GUI | LWR | SPC |   | ENT | RSE  | BACKSPACE |
         bindings = <
         &kp ESC &kp Q &kp W &kp F &kp P &kp B &kp J &kp L &kp U &kp Y &kp SEMI &kp DEL
-        &kp TAB &kp A &mt LALT R &mt LSHFT S &mt LCTRL T &kp G &kp M &mt LCTRL N &mt LSHFT E &kp I &kp O &kp APOS
+        &kp TAB &kp A &hml LALT R &hml LSHFT S &hml LCTRL T &kp G &kp M &hmr LCTRL N &hmr LSHFT E &kp I &kp O &kp APOS
         &kp LGUI &kp Z &kp X &kp C &kp D &kp V &kp K &kp H &kp COMMA &kp DOT &kp SLASH &kp INS
         &kp LGUI &mo 1 &kp SPACE &kp ENTER &mo 2 &kp BACKSPACE
         >;
