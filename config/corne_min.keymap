@@ -15,27 +15,27 @@
                 default_layer {
                             display-name = "Base";
 // -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L   |  U  |  Y  |  ;  | DEL |
-// | CTRL |  A  |  R  |  S  |  T  |  G  |   |  H  |  N   |  E  |  I  |  O  |  '   |
-// | SHFT |  Z  |  X  |  C  |  D  |  V  |   |  K  |  M   |  ,  |  .  |  /  | ESC  |
+// | ESC |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L   |  U  |  Y  |  ;  | DEL |
+// | TAB |  A  |  R  |  S  |  T  |  G  |   |  H  |  N   |  E  |  I  |  O  |  '   |
+// | GUI |  Z  |  X  |  C  |  D  |  V  |   |  K  |  M   |  ,  |  .  |  /  | INS  |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | BACKSPACE |
           bindings = <
-          &kp ESCAPE &kp Q &kp W &kp F &kp P &kp B &kp J &kp L &kp U &kp Y &kp SEMICOLON &kp PRINTSCREEN
-          &kp TAB &kp A &mt LEFT_ALT R &mt LEFT_SHIFT S &mt LEFT_CONTROL T &kp G &kp M &mt LEFT_CONTROL N &mt LEFT_SHIFT E &kp I &kp O &kp SINGLE_QUOTE
+          &kp ESCAPE &kp Q &kp W &kp F &kp P &kp B &kp J &kp L &kp U &kp Y &kp SEMICOLON &kp DEL
+          &kp TAB &kp A &mt LALT R &mt LSHFT S &mt LCTRL T &kp G &kp M &mt LCTRL N &mt LSHFT E &kp I &kp O &kp SINGLE_QUOTE
           &kp LEFT_GUI &kp Z &kp X &kp C &kp D &kp V &kp K &kp H &kp COMMA &kp DOT &kp SLASH &kp
-          LEFT_GUI &none &mo 1 &kp SPACE &kp ENTER &mo 2 &kp BACKSPACE
+          &kp LEFT_GUI &lt 1 &kp SPACE &kp ENTER &lt 2 &kp BACKSPACE
           >;
         };
 // -----------------------------------------------------------------------------------------
 // | BT_2  | boot|     |  `  |  =  |     |   |  [  |  ]   |     |     |     |     |
 // | BT_1  |  1  |  2  |  3  |  4  |  5  |   |  6  |  7   |  8  |  9  |  0  |     |
-// |BT_CLR |     |     |  -  |  '  |  \  |   |     |      |     |     |     |  ⏎  |
+// |BT_CLR |     |     |  #  |  –  |  \  |   |     |      |     |     |     |  ⏎  |
 //                    |     |     |     |   |  ↑  |  ⇧   |  ⌫  |
                 layer1 {
           bindings = <
           &bt BT_SEL 2 &bootloader &none &kp GRAVE &kp EQUAL &none &none &kp LEFT_BRACKET &kp RIGHT_BRACKET &none &none &none
           &bt BT_SEL 1 &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &none 
-          &bt BT_CLR &none &none &none &kp MINUS &none &none &kp SINGLE_QUOTE &kp NON_US_BACKSLASH &none &none &none
+          &bt BT_CLR &none &none &NON_US_HASH &kp MINUS &none &none &kp SINGLE_QUOTE &kp NON_US_BACKSLASH &none &none &none
           &none &trans &none &kp ENTER &kp LEFT_SHIFT &kp BACKSPACE
           >;
                 };
