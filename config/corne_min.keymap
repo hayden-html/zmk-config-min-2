@@ -15,7 +15,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
-            tapping-term-ms = <300>;
+            tapping-term-ms = <400>;
             bindings = <&kp>, <&kp>;
             display-name = "Mod-Tap";
         };
@@ -33,14 +33,14 @@
         bindings = <
         &kp ESC &kp Q &kp W &kp F &kp P &kp B &kp J &kp L &kp U &kp Y &kp SEMI &kp DEL
         &kp TAB &kp A &mt LALT R &mt LSHFT S &mt LCTRL T &kp G &kp M &mt LCTRL N &mt LSHFT E &kp I &kp O &kp APOS
-        &kp LEFT_GUI &kp Z &kp X &kp C &kp D &kp V &kp K &kp H &kp COMMA &kp DOT &kp SLASH &kp INS
+        &kp LGUI &kp Z &kp X &kp C &kp D &kp V &kp K &kp H &kp COMMA &kp DOT &kp SLASH &kp INS
         &kp LGUI &mo 1 &kp SPACE &kp ENTER &mo 2 &kp BACKSPACE
         >;
         };
 // -----------------------------------------------------------------------------------------
 // | BT_2  | boot|     |  `  |  =  |     |   |     |  [   |  ]  |     |     |     |
 // | BT_1  |  1  |  2  |  3  |  4  |  5  |   |  6  |  7   |  8  |  9  |  0  |     |
-// |BT_CLR |     |     |  #  |  –  |  \  |   |     |      |     |     |     |     |
+// |BT_CLR |     |     |  #  |  –  |     |   |     |  \   |     |     |     |     |
 //                     |     |     |     |   |  ↑  | SHFT |  ⌫  |
                 layer1 {
           bindings = <
